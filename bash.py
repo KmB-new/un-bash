@@ -87,9 +87,9 @@ def dekrip():
        print (eror + " File Not Found!")
 
 def keluar():
-    os.sys.exit
     print (eror+ R + """CROT DI LUAR...
 UDAH GK TAHAN YA...""" + ask)
+    os.sys.exit(clear)
 
 
 takok = raw_input(ask + W + " Pilih angka" + G + " => ")
