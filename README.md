@@ -4,8 +4,7 @@
 ```
 ```
 $ apt update && apt upgrade
-$ pkg install git python2
-$ pkg install nodejs
+$ pkg install git python2 nodejs
 $ npm install -g bash-obfuscate
 $ git clone https://github.com/Kmb-id/bashdec
 $ cd bashdec
