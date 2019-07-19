@@ -5,9 +5,9 @@
 ```
 $ apt update && apt upgrade
 $ pkg install git python2 nodejs
-$ npm install -g bash-obfuscate
 $ git clone https://github.com/Kmb-id/bashdec
 $ cd bashdec
+$ npm install -g bash-obfuscate
 $ python2 bash.py
 ```
 <img src="https://github.com/Kmb-id/raw/master/
