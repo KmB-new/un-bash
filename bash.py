@@ -1,5 +1,7 @@
-# author : @Syhrularv_
+# Author : @Syhrularv_
+# Recode : @Kmb-id [L4•ERROR]
 # -*- coding: utf-8 -*-
+#!/bin/bash
 
 import os
 import sys
@@ -89,7 +91,7 @@ def dekrip():
 def keluar():
     print (eror+ R + """CROT DI LUAR...
 UDAH GK TAHAN YA...""" + ask)
-    os.sys.exit(clear)
+    os.sys.exit
 
 
 takok = raw_input(ask + W + " Pilih angka" + G + " => ")
