@@ -10,7 +10,6 @@ $ cd bashdec
 $ python2 bash.py
 ```
 <b>
-```Coder  : https://github.com/Syhrularv/obfuscate
+Coder  : https://github.com/Syhrularv/obfuscate
 <br>Recode : KMB•ID [L4•ERROR]
 <br>       : https://github.com/Kmb-id
-```
