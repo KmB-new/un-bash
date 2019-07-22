@@ -10,8 +10,7 @@ $ cd bashdec
 $ npm install -g bash-obfuscate
 $ python2 bash.py
 ```
-<img src="https://github.com/Kmb-id/raw/master/
-_20190719_183231_com.termux.JPG" />
+<img src ="https://github.com/Kmb-id/bashdec/blob/master/_20190719_183231_com.termux.JPG">
 <br><b>
 Coder  :</b>
 <br>https://github.com/Syhrularv/obfuscate
