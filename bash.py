@@ -1,9 +1,7 @@
 # author : @Syhrularv_
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-import fileinput
+import os, sys, fileinput
 
 N = '\033[0m'
 D = '\033[90m'
@@ -17,39 +15,29 @@ C = '\033[1;36m'
 ask = G + '[' + W + '?' + G + '] '
 sukses = G + '[' + W + '√' + G + '] '
 eror = R + '[' + W + '!' + R + ']'
-
-banner = """
-{}         _nnnn_{}        _________________
-{}        dGGGGMMb{}      |                 |
-{}       @p~qp~~qMb{}   ._| {}Bash [L4•ERROR] {}|
-{}       M{}({}@{})({}@{}) {}M|{}  /  |_________________|
-{}       @,{}----.{}JM|{}_/
-{}      JS^{}\__/{}  qKL
-     dZP        qKRb
-    dZP          qKKb
-   fZP            SMMb
-   HZM            MMMM
-{}   FqM            MMMM
-{} __|'\         |\{}dS{}/,{}qML
-{} |    `.       | `' \{}__
-{}_)      \.{}___.{},|     .'
-\____   ){}MMMMMP{}|   .'
-     `-'       `--'
-""".format(D,W,D,W,D,W,Y,W,D,W,D,W,D,W,D,W,D,Y,D,W,D,Y,D,D,Y,D,Y,D,Y,Y,Y,D,Y,D,Y,D,Y,D,Y,D,Y)
-banner2 = """
-{}___________________ ___________________
-| {}Recode :{} KMB.ID {}| |{} WA :{}088217145014{}|
-|_________________| |_________________|
-        {}MENU TOOL OBFUSCATE
-    {}<=============/\=============>
-    || {}[{}01{}] {} Decript Bash       {}||
-    || {}[{}02{}] {} Encrypt Bash       {}||
-    || {}[{}00{}] {} Exit program       {}||
-    <=============\/=============>
+banner = '''{}___________________________________________________________________{}
+ ____       ____.   ______   __        __         _____   __
+ |  /      / _  |   |  ___/  | |/```\  | |/```\  / __  \  | |/```\.
+ |  |     / /_| |   |  |_,   |   /`\|  |   /`\|  | | | |  |   /`\|
+ |  |    /____  |{} @ {}|   _|   |  |      |  |      | | | |  |  |{}
+ |  |__/|    |  |   |  |_/|  |  |      |  |      | |_| |  |  |
+ |______|    /___\  |_____|  /___\     /___\     \_____/  /___\{}
+___________________________________________________________________'''.format(G,R,Y,R,W,G)
+banner2 = """{}	    ___________________ ★ ___________________
+	    | {}Recode :{} KMB.ID {}| ★ |{} WA :{}088217145014{}|
+	    |_________________| ★ |_________________|
+	         		★
+		      {}MENU TOOLS OBFUSCATE
+    		{}<=============/\==============>
+    		 || {}[{}01{}] {} Decrypt Bash      {}||
+    		 || {}[{}02{}] {} Encrypt Bash      {}||
+    		 || {}[{}00{}] {} Exit program      {}||
+	    	<=============\/==============>
 """.format(C,W,Y,C,W,Y,C,G,C,G,W,G,B,C,G,W,G,Y,C,G,W,G,R,C)
 print banner
 print banner2
 
+#### Encrypt ####
 def enkrip():
    try:
        sc = raw_input(ask + W + "NAMA BAHAN" + G + "> " + Y)
@@ -75,6 +63,7 @@ def enkrip():
    except IOError:
        print (eror + " File Not Found!")
 
+#### Decypt ####
 def dekrip():
    try:
        script = raw_input(ask + W + "NAMA BAHAN " + G + "> " + B)
@@ -86,12 +75,12 @@ def dekrip():
    except IOError:
        print (eror + " File Not Found!")
 
+#### Close ####
 def keluar():
-    print (eror+ R + """CROT DI LUAR...
-UDAH GK TAHAN YA...""" + ask)
+    print (ask + R + """Thanks = by KMB•ID""" + eror)
     os.sys.exit
 
-takok = raw_input(ask + W + " Pilih angka" + G + " => ")
+takok = raw_input(ask + W + " Pilih Angka" + G + " => ")
 
 if takok == "1" or takok == "01":
    enkrip()
@@ -101,4 +90,3 @@ elif takok == "0" or takok == "00":
    keluar()
 else:
    print (eror + " DASAR TOLOL GK BISA BACA !!!")
-
